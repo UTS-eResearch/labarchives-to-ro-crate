@@ -1,0 +1,60 @@
+{
+  "@context": "https://researchobject.github.io/ro-crate/1.0/context.jsonld",
+  "@graph": [
+    {
+      "@id": "#a1807dce-a4ea-4439-8622-8aa7016ca89a",
+      "@type": "Place"
+    },
+    {
+      "@id": "#cd6349ad-8908-4540-b189-b9fb131a16d0",
+      "@type": "Person",
+      "name": "Edwin Tse"
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "author": {
+        "@id": "#cd6349ad-8908-4540-b189-b9fb131a16d0"
+      },
+      "contactPoint": {
+        "@id": "mailto:Contact data-librarian@uts.edu.au"
+      },
+      "datePublished": "43852",
+      "description": "This is a demonstration Dataset ONLY::: This is a supporting data for Open Source Malaria: Potent Triazolopyrazine-Based Antimalarial Drug Candidates that Probe an Important Mechanism of Action thesis. The study is part of Series 4 of the Open Source Malaria project investigating potent triazolopyrazine-based antimalarial drug candidates, Open Source Malaria project.",
+      "identifier": "https://doi.org/10.25910/5d7af492b2c63",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "name": "Dataset for Open Source Malaria: Example"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@type": "CreativeWork",
+      "description": "This work is licensed under theAttribution 4.0 International (CC BY 4.0) License. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/ or write to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.",
+      "name": "Attribution 4.0 International (CC BY 4.0)"
+    },
+    {
+      "@id": "https://ror.org/0384j8v12",
+      "@type": "Organization",
+      "contactPoint": {
+        "@id": "mailto:Contact data-librarian@uts.edu.au"
+      },
+      "name": "University of Technology Sydney"
+    },
+    {
+      "@id": "mailto:Contact data-librarian@uts.edu.au",
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "name@example.com",
+      "name": "Contact data-librarian@uts.edu.au"
+    },
+    {
+      "@id": "ro-crate-metadata.jsonld",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "identifier": "ro-crate-metadata.jsonld"
+    }
+  ]
+}
