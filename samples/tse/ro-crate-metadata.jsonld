@@ -2,19 +2,14 @@
   "@context": "https://researchobject.github.io/ro-crate/1.0/context.jsonld",
   "@graph": [
     {
-      "@id": "#a1807dce-a4ea-4439-8622-8aa7016ca89a",
+      "@id": "#63bdd821-67ce-48e4-8307-5f6edc1b6517",
       "@type": "Place"
-    },
-    {
-      "@id": "#cd6349ad-8908-4540-b189-b9fb131a16d0",
-      "@type": "Person",
-      "name": "Edwin Tse"
     },
     {
       "@id": "./",
       "@type": "Dataset",
       "author": {
-        "@id": "#cd6349ad-8908-4540-b189-b9fb131a16d0"
+        "@id": "https://orcid.org/0000-0002-9133-9274"
       },
       "contactPoint": {
         "@id": "mailto:Contact data-librarian@uts.edu.au"
@@ -32,6 +27,11 @@
       "@type": "CreativeWork",
       "description": "This work is licensed under theAttribution 4.0 International (CC BY 4.0) License. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/ or write to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.",
       "name": "Attribution 4.0 International (CC BY 4.0)"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9133-9274",
+      "@type": "Person",
+      "name": "Edwin Tse"
     },
     {
       "@id": "https://ror.org/0384j8v12",
