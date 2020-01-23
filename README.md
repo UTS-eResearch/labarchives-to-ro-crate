@@ -12,7 +12,7 @@ This is for experienced node developers only at the moment.
 This is a proof of concept.
 
 TODO: 
-- [ ] More extensive testing that "that look about right"
+- [ ] More extensive testing than "that looks about right"
 - [ ] Review the modeling of notebooks in RO-Crate
 - [ ] Export comments
 - [ ] Refine the way HTML is generated
@@ -82,19 +82,19 @@ NDI0NDEuMXwzMjY0Ny8zMjY0Ny9Ob3RlYm9vay8zMjk5NTc3NzkxfDEwNzczNS4wOTk5OTk5OTk5OQ==
 ```
 ### Export a notebook
 
-To export a notebook given its use one of the IDs:
+To export a notebook into the `crates` directory given use one of the IDs:
 
 ```
-node export.js -t test -i ~/.lauuid -n NDI0NDEuMXwzMjY0Ny8zMjY0Ny9Ob3RlYm9vay8zMjk5NTc3NzkxfDEwNzczNS4wOTk5OTk5OTk5OQ==  -m samples/tse/ro-crate-metadata.jsonld
+node export.js -t test -i ~/.lauid -n NDI0NDEuMXwzMjY0Ny8zMjY0Ny9Ob3RlYm9vay8zMjk5NTc3NzkxfDEwNzczNS4wOTk5OTk5OTk5OQ==  -m samples/tse/ro-crate-metadata.jsonld crates
 ```
 
 
-To export Edwin Tse's exemplary notebook on Open Malaria drug research with
-addition metadata from an existing RO-Crate using the `-m` option (WARNING: This is
+To export Edwin Tse's giant, current, exemplary notebook on Open Malaria drug research with
+addition top-level metadata from an existing RO-Crate (in samples/tse) using the `-m` option (WARNING: This is
 a BIG notebook):
 
 ```
-node export.js -t test -i ~/.lauuid -n MTYzLjh8MTUwOS8xMjYvVHJlZU5vZGUvMjUxNDEwNDEwOHw0MTUuOA==  -m samples/tse/ro-crate-metadata.jsonld
+node export.js -t test -i ~/.lauid -n MTYzLjh8MTUwOS8xMjYvVHJlZU5vZGUvMjUxNDEwNDEwOHw0MTUuOA==  -m samples/tse/ro-crate-metadata.jsonld crates
 ```
 
 
