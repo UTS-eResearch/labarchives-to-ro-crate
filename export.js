@@ -1,9 +1,9 @@
 const fs = require('fs-extra');
 const la = require('@uts-eresearch/provision-labarchives');
 const path = require('path');
-const Preview = require("ro-crate").Preview;
-const HtmlFile = require("ro-crate").HtmlFile;
 const ROCrate = require("ro-crate").ROCrate;
+const Preview = require("ro-crate-html-js").Preview;
+const HtmlFile = require("ro-crate-html-js").HtmlFile;
 const crate = new ROCrate();
 crate.index();
 var rootDataset = crate.getRootDataset();
@@ -198,7 +198,7 @@ function toDirName(string) {
 async function main(){
     var uid;
     if (fs.existsSync(keyPath)) {
-        const  keyFile = fs.readFileSync(keyPath);
+        const  keyFile = fs.readFileSync(keyPath, 'utf8');
     try {
         key = JSON.parse(keyFile);
     } catch (error) {
@@ -216,12 +216,12 @@ async function main(){
         fs.writeFileSync(uidFile, uid);
     } else if (fs.existsSync(uidFile)) {
         console.log("Reading uid file")
-        uid = fs.readFileSync(uidFile);
+        uid = fs.readFileSync(uidFile, 'utf8');
         if (nbid) {
             const nb = await la.getNotebookInfo(key, uid, nbid);
             //console.log(util.inspect(nb, false, null));
             if (metadataTemplate) {
-                const template = JSON.parse(fs.readFileSync(metadataTemplate))
+                const template = JSON.parse(fs.readFileSync(metadataTemplate, 'utf8'))
                 crate.json_ld["@graph"] = template["@graph"];
                 crate.index();
                 rootDataset = crate.getRootDataset();
@@ -251,7 +251,7 @@ async function main(){
         }
     }
      else {
-        console.log('provide username (-u) and token  (-t) and path to scret file to store the user id (-i)');
+        console.log('provide username (-u) and token  (-t) and path to secret file to store the user id (-i)');
     }
 }
 
