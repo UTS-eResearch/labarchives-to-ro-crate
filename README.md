@@ -64,13 +64,13 @@ Options:
 ### Get a user-id and write it to a file
 
 - To get a secret ID, use:
-   `node export.js -u email@example.com -t TOKEN  ~/.lauid`
+   `node export.js -u email@example.com -t TOKEN -i ~/.lauid`
 
 
 ### Get a list of notebooks
 
 -  To get a list of notebooks to which you have access use this command:
-    `node export.js -l -i ~/.lauuid`
+    `node export.js -l -i ~/.lauid`
 
 Response:
 ```

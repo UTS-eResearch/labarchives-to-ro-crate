@@ -105,9 +105,14 @@ dist
 
 # Secrets
 key.json
+.lauid
 
 # Output
-crates/
+crates/*
+!crates/.gitkeep
+
+# IDEs
+.idea
 
 ~*
 
