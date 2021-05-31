@@ -97,6 +97,33 @@ a BIG notebook):
 node export.js -t test -i ~/.lauid -n MTYzLjh8MTUwOS8xMjYvVHJlZU5vZGUvMjUxNDEwNDEwOHw0MTUuOA==  -m samples/tse/ro-crate-metadata.jsonld crates
 ```
 
+### Library API
 
+Usage:
+
+Create laToRoCrate
+```ignorelang
+key: json object
+outDir: baseFile for exporting notebooks
+metadataFileName: "ro-crate-metdatata.json"
+log: boolean: display basic logs for debugging
+```
+
+```js
+const laToRoCrate = new LaToRoCrate(key, outDir, metadataFileName, log);
+```
+Export Notebook Sync
+```ignorelang
+uid: user id
+nbid: notebook id
+rootDatasetName: name of the root dataset of the ro-crate
+outputDirectoryName: directory name of the exported notebook
+cratescript: <optional> crate script
+metadataTemplate: <optional> metadata template from an existing ro-crate
+pageMetaDescription: <optional> entry description to be written into ro-crate
+```
+```js
+await laToRoCrate.exportNotebookSync(uid, nbid, rootDatasetName, outputDirectoryName, cratescript, metadataTemplate, pageMetaDescription);
+```
 
 
