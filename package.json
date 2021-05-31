@@ -1,6 +1,6 @@
 {
   "name": "labarchives-to-ro-crate",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Research Object Crate export for LabArchives notebooks",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/UTS-eResearch/labarchives-to-ro-crate.git"
   },
-  "author": "Peter Sefton",
+  "author": {
+    "name": "Peter Sefton",
+    "url": "ptsefton.com"
+  },
+  "contributors": [
+    {
+      "name": "Moises Sacal Bonequi",
+      "url": "https://github.com/moisbo"
+    }
+  ],
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/UTS-eResearch/labarchives-to-ro-crate/issues"
