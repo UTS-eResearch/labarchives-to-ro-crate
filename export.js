@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const program = require('commander');
 const la = require('@uts-eresearch/provision-labarchives');
-const LaToRoCrate = require('./lib/laToRoCrate');
+const {LaToRoCrate} = require('./index');
 
 let outDir = '';
 

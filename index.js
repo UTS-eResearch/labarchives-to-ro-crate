@@ -1,3 +1,3 @@
 module.exports = {
-    export: require("./lib/export.js"),
+  LaToRoCrate: require("./lib/LaToRoCrate.js"),
 };

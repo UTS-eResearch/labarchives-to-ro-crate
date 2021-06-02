@@ -110,6 +110,8 @@ log: boolean: display basic logs for debugging
 ```
 
 ```js
+const {LaToRoCrate} = require(<this package git or npm>);
+
 const laToRoCrate = new LaToRoCrate(key, outDir, metadataFileName, log);
 ```
 Export Notebook Sync
